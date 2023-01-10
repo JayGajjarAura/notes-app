@@ -1,0 +1,18 @@
+.header_font_color {
+    color: rgba(65, 60, 60, 0.915);
+}
+
+#search_icon {
+    padding-top: 8px;
+    padding-left: 15px;
+}
+
+.dark_mode_size {
+    font-size: 20px;
+}
+
+.search-form {
+    margin: 0 1rem;
+    flex-grow: 0.45;    /* <-- THE SECRET SAUCE! */
+    min-width: 50px;
+}
