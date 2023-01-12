@@ -20,6 +20,7 @@
     "express": "^4.18.2",
     "handlebars": "^4.7.7",
     "hbs": "^4.2.0",
+    "mongoose": "^6.8.3",
     "path": "^0.12.7",
     "postman-request": "^2.88.1-postman.31"
   }
