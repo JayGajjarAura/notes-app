@@ -1,6 +1,9 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
+const mongoose = require('mongoose')
+
+mongoose.set("strictQuery", false);
 
 const app = express()
 const port = process.env.PORT || 5000
@@ -18,11 +21,13 @@ hbs.registerPartials(partialpath)
 //setup static dictioary to serve
 app.use(express.static(publicDirectoryPath))
 
-app.get('', (req, res) => {
-    res.render('index', {
-        
+mongoose.connect("mongodb+srv://JayGajjarAura:J104aura@cluster0.kdhaofx.mongodb.net/?retryWrites=true&w=majority").then(function(){
+    app.get('/', (req, res) => {
+        res.render('index', {
+
+        })
     })
-})
+});
 
 app.listen(port, () => {
     console.log('server is up on port ' + port)
