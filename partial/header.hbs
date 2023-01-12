@@ -1,0 +1,46 @@
+<header>
+    <nav class="navbar fixed-top bg-body-tertiary border-bottom">
+        <div class="container-fluid">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" ia-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title ms-1" id="offcanvasNavbarLabel"> Menu </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active bi bi-pencil" aria-current="page" href="#"> Notes </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-trash3" href="#"> Trash </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="navbar-brand" href="#">
+                <!-- <a href="https://www.flaticon.com/free-icons/sticky-notes" title="sticky notes icons">Sticky notes icons created by Freepik - Flaticon</a> -->
+                <img src="../Images/sticky-notes.png" alt="Logo" width="33" height="30"
+                    class="d-inline-block align-text-bottom">
+                <span class="header_font_color ms-2 fs-3">
+                    Notes
+                </span>
+            </a>
+            <form class="d-flex shadow bg-body rounded search-form mx-auto" role="search">
+                <span id="search_icon" class="bi-search bg-white border border-end-0 rounded-start"></span>
+                <input class="form-control border border-start-0 rounded-start-0 py-2 shadow-none" type="search"
+                    placeholder="Search" aria-label="Search">
+                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+            <div>
+                <span class="bi bi-circle-half dark_mode_size mt-1" aria-label="Dark mode"></span>
+                <img src="../Images/profile img.jpg" alt="profile photo" width="35" height="35"
+                    class="rounded-5 mb-1 ms-2">
+            </div>
+        </div>
+    </nav>
+</header>
